@@ -11,6 +11,11 @@ Ce repository contient un tutoriel détaillé sur l'utilisation des données d'u
   - [Requêtes à une API externe](#requêtes-à-une-api-externe)
     - [Introduction à L'API OpenWeatherMap](#introduction-à-lapi-openweathermap)
     - [Creer un compte OpenWeatherMap](#creer-un-compte-openweathermap)
+      - [Etape 1 :](#etape-1-)
+      - [Etape 2:](#etape-2)
+      - [Etape 3:](#etape-3)
+      - [Etape 4:](#etape-4)
+      - [Etape 5:](#etape-5)
 
 **Prérequis:**
 - Connaissances de base en Python
@@ -76,3 +81,34 @@ Malgres le fait qu'il soit gratuit cette api a quelque restriction :
   
 ### Creer un compte OpenWeatherMap
 pour creer un compte il va d'abord falloir se rendre sur le site web de OpenWeatherMap, elle se trouve sur l'addresse suivante :  [https://openweathermap.org/](https://openweathermap.org/)
+
+#### Etape 1 :
+Une fois que vous sur le site çà devrait se présente comme ça :
+ensuite cliquer sur le button `Sign In`
+
+
+<img src='./assets/etape1.png' alt='premiere étape' width='820'>
+
+#### Etape 2:
+Ensuite vous devrait etre redirige sur une page qui ressemble un peu à ça : Si tu as un compte du doit juste remplir tes identifiants dans le formulaire, si non cliquer sur le button `Create an Account` pour cree un nouveau compte
+
+
+<img src='./assets/etape2.png' alt='deuxieme étape' width='820'>
+
+#### Etape 3:
+Si vous avez cclique sur ce button vous tomberez sur cette page, il faudrait ensuite remplir ce formulaire pour creer un nouveau compte :
+
+
+<img src='./assets/etape3.png' alt='troisieme étape' width='820'>
+
+#### Etape 4:
+Une fois que tu te connectes ou que tu finis touce qui a rapport avec l'inscription, tu devrais etre rediriger vers cette page: 
+Pour avoir acces aux donnée d'une api on a besoin d'une clé et c'est grace à cette clé que l'on a pouvoir avoir accees aux donnée que sert cette api et pour avoir notre clé il faut cliquez sur le button `Api Key`
+
+
+<img src='./assets/etape4.png' alt='quatrieme étape' width='820'>
+
+#### Etape 5:
+Copier cette clé Àpi on en aura besoin pour la suite :
+
+<img src='./assets/etape5.png' alt='cinquieme étape' width='820'>
