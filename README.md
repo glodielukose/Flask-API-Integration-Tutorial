@@ -96,30 +96,37 @@ Pour créer un compte, rendez-vous sur le site OpenWeatherMap à l'adresse suiva
 
 #### Étape 1 :
 Une fois sur le site, cliquez sur le bouton `Sign In`.
+<img src='./assets/etape1.png' alt='étape 1' width='820'>
 
 #### Étape 2 :
 Si vous n'avez pas encore de compte, cliquez sur `Create an Account` pour en créer un.
+<img src='./assets/etape2.png' alt='étape 2' width='820'>
 
 #### Étape 3 :
 Remplissez le formulaire pour créer votre compte.
+<img src='./assets/etape3.png' alt='étape 3' width='820'>
 
 #### Étape 4 :
 Connectez-vous, puis cliquez sur `API Key` pour obtenir votre clé API, nécessaire pour accéder aux données.
+<img src='./assets/etape4.png' alt='étape 4' width='820'>
 
 #### Étape 5 :
 Copiez cette clé API pour l'utiliser dans la suite du tutoriel.
+<img src='./assets/etape5.png' alt='étape 5' width='820'>
 
 #### Étape 6 :
 Essayez d'ouvrir l'URL suivante dans votre navigateur, en remplaçant `<API Key>` par votre clé API :  
 `http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric&appid=<API Key>`
 
 Vous devriez obtenir un résultat comme suit :
+<img src='./assets/etape6-2.png' alt='étape 6-1' width='820'>
+<img src='./assets/etape6-1.png' alt='étape 6-2' width='820'>
 
 ### Analyse des fichiers JSON avec Python
 Maintenant que nous pouvons accéder aux données via HTTP et l'URL de l'API, voyons comment les utiliser dans du code Python.
 
 #### Introduction au JSON
-Le JSON est une structure de données similaire aux dictionnaires Python, ce qui facilite son utilisation si l'on est déjà à l'aise avec ces derniers. Python dispose de bibliothèques pour traiter le JSON depuis une URL :
+Le JSON est une structure de données similaire aux dictionnaires Python, ce qui facilite son utilisation. Python dispose de bibliothèques pour traiter le JSON depuis une URL :
 - `urllib` : Permet de télécharger les données contenues dans l'URL.
 - `json` : Permet de parser les données JSON en un dictionnaire Python.
 
@@ -162,11 +169,11 @@ N'oubliez pas de remplacer `<API Key>` par votre clé API.
 
 ## Affichage des données dans l'application
 
-Maintenant que nous sommes capables de récupérer les données de l'API sous forme de dictionnaire Python, nous devrions pouvoir les afficher dans une page web HTML. Pour cela, nous allons utiliser le moteur de template Jinja. Ce moteur, directement intégré dans Flask, nous permet d'afficher des données dynamiques sur une page web.
+Maintenant que nous sommes capables de récupérer les données de l'API sous forme de dictionnaire Python, nous devrions pouvoir les afficher dans une page web HTML. Pour cela, nous allons utiliser le moteur de template Jinja.
 
 Jinja est un moteur de templates utilisé dans le développement web, surtout avec le framework Flask. Il permet de générer des pages HTML dynamiques en mélangeant du code HTML avec des variables et des expressions Python. En gros, Jinja agit comme un "intermédiaire" qui intègre les données Python dans les pages HTML.
 
-Jinja est déjà intégré dans Flask, donc nous n'avons pas besoin de l'installer dans notre environnement. Les étapes suivantes vous montreront comment utiliser Jinja pour notre projet.
+Et comme Jinja est déjà intégré dans Flask, nous n'avons pas besoin de l'installer dans notre environnement. Les étapes suivantes vous montreront comment utiliser Jinja pour notre projet.
 
 ### Étape 1
 Pour commencer, créez un dossier dans notre projet nommé `templates`, puis, dans ce dossier, créez un fichier `.html` nommé `home.html` qui contiendra le code suivant :
@@ -203,7 +210,7 @@ def index():
 ```
 
 Une fois le serveur lancé, vous devriez obtenir le résultat suivant :
-<img src='./assets/resultat1.png' alt='quatrième étape' width='820'>
+<img src='./assets/resultat1.png' alt='resultat 1' width='820'>
 
 Ceci étant fait, notre objectif reste tout de même de pouvoir visualiser nos données sur notre page. Pour cela, passons à la dernière étape :
 
@@ -218,9 +225,9 @@ def index():
     )
 ```
 
-La fonction render_template dans Flask permet de générer une page HTML en utilisant un template Jinja et de l’envoyer en réponse au client (navigateur). Elle fait deux choses principales
+* La fonction `render_template` dans Flask permet de générer une page HTML en utilisant un template Jinja et de l’envoyer en réponse au client (navigateur). Elle fait deux choses principales
 
-Nous pourrons alors accéder à nos données sur notre page web. Il ne reste plus qu'à bien les organiser :
+Nous pouvons maintenant accéder à nos données sur notre page web. Il ne reste plus qu'à bien les organiser :
 
 ```html
 <html lang="en">
@@ -243,7 +250,7 @@ Nous pourrons alors accéder à nos données sur notre page web. Il ne reste plu
 ```
 
 Si vous redémarrez le serveur, votre page web devrait ressembler à ceci :
-<img src='./assets/resultat2.png' alt='quatrième étape' width='820'>
+<img src='./assets/resultat2.png' alt='resultat 2' width='820'>
 
 ## Aller plus loin
 
@@ -279,9 +286,7 @@ def index():
 
 * `city = request.args.get('city')` : `request.args.get('city')` permet de récupérer la requête entrée dans le formulaire. Nous stockons ensuite ces informations dans la variable `city`.
 
-Pour conclure votre tutoriel, vous pouvez résumer les étapes clés, rappeler l'objectif principal et suggérer des idées pour aller plus loin. Voici un exemple de conclusion :
-
----
+<img src='./assets/resultat3.png' alt='resultat 3' width='820'>
 
 ## Conclusion
 
